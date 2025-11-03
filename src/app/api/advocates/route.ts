@@ -1,7 +1,8 @@
-import db from '../../../db';
-import { advocates } from '../../../db/schema';
 import { NextRequest } from 'next/server';
 import { or, ilike } from 'drizzle-orm';
+
+import db from '@/db';
+import { advocates } from '@/db/schema';
 
 import { SEARCH_PARAM_KEY } from './data';
 
